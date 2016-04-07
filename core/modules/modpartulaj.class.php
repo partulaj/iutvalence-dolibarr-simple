@@ -21,7 +21,7 @@
  * 	\defgroup   simple     Module simple
  *  \brief      Example of a module descriptor.
  *				Such a file must be copied into htdocs/simple/core/modules directory.
- *  \file       htdocs/simple/core/modules/modsimple.class.php
+ *  \file       htdocs/simple/core/modules/modpartulaj.class.php
  *  \ingroup    simple
  *  \brief      Description and activation file for module simple
  */
@@ -39,7 +39,7 @@ class modsimple extends DolibarrModules
 	 *   @param      DoliDB		$db      Database handler
 	 */
 
-	static $number = 208000;
+	static $number = 208413;
 
 	function __construct($db)
 	{
@@ -153,7 +153,8 @@ class modsimple extends DolibarrModules
 		
 		//TODO à copier dans votre module
         $this->tabs = array(
-			'contact:+tab'.$this->numero.':Title'.$this->numero.':simple@simple::/simple/simple.php?fk_contact=__ID__'		);
+			'contact:+tab'.$this->numero.':Title'.$this->numero.':partulaj@partulaj::/partulaj/simple.php?fk_contact=__ID__'
+		);
 		
 		//TODO fin copie
 
